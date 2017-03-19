@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    user-select: none;
+}
+
+canvas {
+    display: block;
+}
+
+#toolbar {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    background-color: #2f2f2f;
+    color: #ffffff;
+}
+
+.radcontrol {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #4f4f4f;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.radcontrol:hover {
+    background: #5f5f5f;
+}
+
+.radcontrol:active {
+    background: #6f6f6f;
+}
+
+#decrad {
+    left: 100px;
+}
+
+#incrad {
+    left: 150px;
+}
+
+#rad {
+    float: left;
+}
+
+#colors {
+    float: right;
+    margin-right: 50px;
+}
+
+.swatch {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5),
+                0 2px 2px rgba(0, 0, 0, .5);
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.swatch.active {
+    border: 2px solid #ffffff;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .5);
+}
+
+#save, #clear {
+    display: inline-block;
+    height: 30px;
+    padding: 5px;
+    background-color: #4f4f4f;
+    color: #ffffff;
+    cursor: pointer;
+    float: right;
+}
+
+#save:hover, #clear:hover {
+    background: #5f5f5f;
+}
+
+#save:active, #clear:active {
+    background: #6f6f6f;
+}
+
+#clear {
+    margin-right: 20px;
+}
+
+#customColor {
+    display: none;
+}
